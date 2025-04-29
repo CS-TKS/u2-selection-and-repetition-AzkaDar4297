@@ -67,25 +67,25 @@ explanations = [
     "SDG 11 is about making cities safe and sustainable."
 ]
 
-# Ask all questions
-while count < 15:
-    print #i want to ask the question
-    print #I want to give the options
+for i in range(15):
+    print("Question " + str(i + 1) + ": " + questions[i])
+    print("a) " + options[i][0])
+    print("b) " + options[i][1])
+    print("c) " + options[i][2])
+    print("d) " + options[i][3])
+
     answer = input("Your answer (a/b/c/d): ")
 
-    if answer == #the correct answer
+    if answer == correct_answers[i]:
         print("Correct!")
         score = score + 1
     else:
         print("Incorrect!")
 
-    print("The correct answer was:"
-    print("Explanation: "
+    print("The correct answer was: " + correct_answers[i])
+    print("Explanation: " + explanations[i])
     print()
 
-    count = count + 1
-
-# Process total points
 print("Quiz finished!")
 print("You scored " + str(score) + " out of 15.")
 
